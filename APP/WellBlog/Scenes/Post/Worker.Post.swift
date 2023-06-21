@@ -35,7 +35,7 @@ extension Worker {
         
         func getPostsByPage(
             page: Int,
-            pageSize: Int,
+            pageSize: Int = APIHost.itemsPerPage,
             success: (([Model.Post]) -> Void)? = nil,
             failure: (() -> Void)? = nil
         ) {

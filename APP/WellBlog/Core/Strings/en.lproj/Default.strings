@@ -1,0 +1,3 @@
+"error.title" = "Error";
+"error.message" = "There was a problem fetching the data.";
+"error.tryAgain" = "Try again";

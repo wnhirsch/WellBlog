@@ -19,11 +19,11 @@ extension Coordinator {
         }
 
         func start() {
-//            let randomCoordinator = Coordinator.Random()
-//            randomCoordinator.start()
-//            childCoordinator = randomCoordinator
-//            window.rootViewController = randomCoordinator.containerViewController
-//            window.makeKeyAndVisible()
+            let postCoordinator = Coordinator.Post()
+            postCoordinator.start()
+            childCoordinator = postCoordinator
+            window.rootViewController = postCoordinator.containerViewController
+            window.makeKeyAndVisible()
         }
     }
 }
