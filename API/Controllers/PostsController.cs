@@ -78,7 +78,7 @@ namespace WellBlog.Controllers
                 {
                     Title = model.Title,
                     Description = model.Description,
-                    CreatedAt = DateTime.Now
+                    CreatedAt = DateTime.UtcNow
                 };
 
                 try
