@@ -14,5 +14,12 @@ extension Model {
         let title: String?
         let description: String?
         let createdAt: Date?
+        
+        init() {
+            self.id = nil
+            self.title = nil
+            self.description = nil
+            self.createdAt = nil
+        }
     }
 }

@@ -1,0 +1,13 @@
+// MARK: - Post.List
+
+"list.title" = "Post List";
+"list.cell.date" = "Date: %@";
+"list.button" = "New Post";
+
+// MARK: - Post.Details
+
+"details.title" = "Post Details";
+"details.button" = "Delete Post";
+"details.post.title" = "Title";
+"details.post.date" = "Date";
+"details.post.description" = "Description";

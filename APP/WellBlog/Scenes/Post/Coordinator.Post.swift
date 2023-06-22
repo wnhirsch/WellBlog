@@ -25,20 +25,44 @@ extension Coordinator {
             navigationController.pushViewController(vc, animated: true)
         }
         
-        func showError(handler: ((UIAlertAction) -> Void)? = nil) {
+        func startDetails(postId: Int) {
+            let vc = Scene.Post.Details.ViewController(viewModel: .init(postId: postId, coordinator: self))
+            navigationController.pushViewController(vc, animated: true)
+        }
+        
+        func dismiss() {
+            navigationController.popViewController(animated: true)
+        }
+        
+        func showError(
+            tryAgain: ((UIAlertAction) -> Void)? = nil,
+            cancel: ((UIAlertAction) -> Void)? = nil
+        ) {
             let alert = UIAlertController(
                 title: "error.title".localized(context: .default),
                 message: "error.message".localized(context: .default),
                 preferredStyle: .alert
             )
-            let tryAgainAction = UIAlertAction(
-                title: "error.tryAgain".localized(context: .default),
-                style: .default,
-                handler: handler
-            )
-            alert.addAction(tryAgainAction)
+            
+            if let cancel = cancel {
+                let cancelAction = UIAlertAction(
+                    title: "error.cancel".localized(context: .default),
+                    style: .cancel,
+                    handler: cancel
+                )
+                alert.addAction(cancelAction)
+            }
+            
+            if let tryAgain = tryAgain {
+                let tryAgainAction = UIAlertAction(
+                    title: "error.tryAgain".localized(context: .default),
+                    style: .default,
+                    handler: tryAgain
+                )
+                alert.addAction(tryAgainAction)
+            }
+            
             navigationController.present(alert, animated: true)
         }
     }
-    
 }

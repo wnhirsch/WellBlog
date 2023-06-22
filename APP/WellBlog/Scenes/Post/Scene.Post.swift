@@ -9,5 +9,6 @@ extension Scene {
     
     enum Post {
         enum List { }
+        enum Details { }
     }
 }

@@ -14,6 +14,7 @@ extension Scene.Post.List {
 
         private let contentView: View
         private let viewModel: ViewModel
+        private var isFirstAppearance = true
         
         private var cancellables = Set<AnyCancellable>()
 
@@ -33,13 +34,18 @@ extension Scene.Post.List {
         
         override func viewDidLoad() {
             super.viewDidLoad()
-            navigationItem.title = "title".localized(context: .postList)
+            navigationItem.title = "list.title".localized(context: .post)
             bind()
         }
         
         override func viewWillAppear(_ animated: Bool) {
             super.viewWillAppear(animated)
             navigationController?.setNavigationBarHidden(false, animated: animated)
+            
+            if !isFirstAppearance {
+                viewModel.refreshData()
+            }
+            isFirstAppearance = false
         }
         
         private func bind() {
