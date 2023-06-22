@@ -19,7 +19,7 @@ extension Scene.Post.List {
             return tableView
         }()
         
-        private let newPostButton: UIButton = {
+        let newPostButton: UIButton = {
             let button = UIButton()
             button.setTitle("list.button".localized(context: .post), for: .normal)
             button.backgroundColor = .systemBlue
@@ -28,7 +28,6 @@ extension Scene.Post.List {
             return button
         }()
         
-        private var cancellables = Set<AnyCancellable>()
         let newPostPublisher = PassthroughSubject<Void, Never>()
         
         init() {

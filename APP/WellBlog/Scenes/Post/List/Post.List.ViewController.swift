@@ -28,6 +28,10 @@ extension Scene.Post.List {
             fatalError("init(coder:) has not been implemented")
         }
         
+        deinit {
+            cancellables.forEach { $0.cancel() }
+        }
+        
         override func loadView() {
             view = contentView
         }

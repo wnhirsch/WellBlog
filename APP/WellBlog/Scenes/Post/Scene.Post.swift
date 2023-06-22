@@ -8,7 +8,8 @@
 extension Scene {
     
     enum Post {
-        enum List { }
+        enum Create { }
         enum Details { }
+        enum List { }
     }
 }

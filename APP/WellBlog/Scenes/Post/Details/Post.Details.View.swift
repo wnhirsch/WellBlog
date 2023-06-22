@@ -79,7 +79,6 @@ extension Scene.Post.Details {
             return button
         }()
         
-        private var cancellables = Set<AnyCancellable>()
         let deletePostPublisher = PassthroughSubject<Void, Never>()
         
         init() {

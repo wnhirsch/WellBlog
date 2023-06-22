@@ -1,9 +1,9 @@
-// MARK: - Post.List
+// MARK: - Post.Create
 
-"list.title" = "Post List";
-"list.cell.date" = "Date: %@";
-"list.button" = "New Post";
-"list.empty" = "No post found.";
+"create.title" = "New Post";
+"create.field.title" = "Insert a title";
+"create.field.description" = "Add the post text";
+"create.button" = "Add Post";
 
 // MARK: - Post.Details
 
@@ -12,3 +12,10 @@
 "details.post.title" = "Title";
 "details.post.date" = "Date";
 "details.post.description" = "Description";
+
+// MARK: - Post.List
+
+"list.title" = "Post List";
+"list.cell.date" = "Date: %@";
+"list.button" = "New Post";
+"list.empty" = "No post found.";
