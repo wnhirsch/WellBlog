@@ -12,9 +12,7 @@
 		223805282A437E3C00EDA662 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223805272A437E3C00EDA662 /* SceneDelegate.swift */; };
 		2238052F2A437E3D00EDA662 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2238052E2A437E3D00EDA662 /* Assets.xcassets */; };
 		223805322A437E3D00EDA662 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 223805302A437E3D00EDA662 /* LaunchScreen.storyboard */; };
-		2238053D2A437E3D00EDA662 /* WellBlogTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2238053C2A437E3D00EDA662 /* WellBlogTests.swift */; };
-		223805472A437E3D00EDA662 /* WellBlogUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223805462A437E3D00EDA662 /* WellBlogUITests.swift */; };
-		223805492A437E3D00EDA662 /* WellBlogUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223805482A437E3D00EDA662 /* WellBlogUITestsLaunchTests.swift */; };
+		2238053D2A437E3D00EDA662 /* Post.List.Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2238053C2A437E3D00EDA662 /* Post.List.Test.swift */; };
 		22DBF04D2A4386B400C0108C /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22DBF04C2A4386B400C0108C /* Coordinator.swift */; };
 		22DBF04F2A4386D100C0108C /* Coordinator.App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22DBF04E2A4386D100C0108C /* Coordinator.App.swift */; };
 		22DBF0512A438C8800C0108C /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22DBF0502A438C8800C0108C /* Repository.swift */; };
@@ -51,19 +49,15 @@
 		22DBF0A72A43ED8700C0108C /* Post.Create.ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22DBF0A62A43ED8700C0108C /* Post.Create.ViewModel.swift */; };
 		22DBF0A92A43F49A00C0108C /* UITextView+Placeholder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22DBF0A82A43F49A00C0108C /* UITextView+Placeholder.swift */; };
 		22DBF0AB2A43F97700C0108C /* UIButton+State.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22DBF0AA2A43F97700C0108C /* UIButton+State.swift */; };
-		5ECD3ADA247DF6A303434188 /* Pods_WellBlogUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFDBA100E8677C8BCAAA35D2 /* Pods_WellBlogUITests.framework */; };
+		22E2C3CC2A44106E00114B43 /* Post.MockCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E2C3CB2A44106E00114B43 /* Post.MockCoordinator.swift */; };
+		22E2C3CE2A4410AF00114B43 /* Post.MockWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E2C3CD2A4410AF00114B43 /* Post.MockWorker.swift */; };
+		22E2C3D32A441A3400114B43 /* Post.Details.Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E2C3D22A441A3400114B43 /* Post.Details.Test.swift */; };
+		22E2C3D52A441E2C00114B43 /* Post.Create.Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E2C3D42A441E2C00114B43 /* Post.Create.Test.swift */; };
 		71437B6F512CF0F070CBE16D /* Pods_WellBlogTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7EAB097DA8CB337BEFE25CE /* Pods_WellBlogTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		223805392A437E3D00EDA662 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 2238051A2A437E3C00EDA662 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 223805212A437E3C00EDA662;
-			remoteInfo = WellBlog;
-		};
-		223805432A437E3D00EDA662 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 2238051A2A437E3C00EDA662 /* Project object */;
 			proxyType = 1;
@@ -81,10 +75,7 @@
 		223805312A437E3D00EDA662 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		223805332A437E3D00EDA662 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		223805382A437E3D00EDA662 /* WellBlogTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WellBlogTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		2238053C2A437E3D00EDA662 /* WellBlogTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WellBlogTests.swift; sourceTree = "<group>"; };
-		223805422A437E3D00EDA662 /* WellBlogUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WellBlogUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		223805462A437E3D00EDA662 /* WellBlogUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WellBlogUITests.swift; sourceTree = "<group>"; };
-		223805482A437E3D00EDA662 /* WellBlogUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WellBlogUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		2238053C2A437E3D00EDA662 /* Post.List.Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.List.Test.swift; sourceTree = "<group>"; };
 		22DBF04C2A4386B400C0108C /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		22DBF04E2A4386D100C0108C /* Coordinator.App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.App.swift; sourceTree = "<group>"; };
 		22DBF0502A438C8800C0108C /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
@@ -123,6 +114,10 @@
 		22DBF0A62A43ED8700C0108C /* Post.Create.ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.Create.ViewModel.swift; sourceTree = "<group>"; };
 		22DBF0A82A43F49A00C0108C /* UITextView+Placeholder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextView+Placeholder.swift"; sourceTree = "<group>"; };
 		22DBF0AA2A43F97700C0108C /* UIButton+State.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+State.swift"; sourceTree = "<group>"; };
+		22E2C3CB2A44106E00114B43 /* Post.MockCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.MockCoordinator.swift; sourceTree = "<group>"; };
+		22E2C3CD2A4410AF00114B43 /* Post.MockWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.MockWorker.swift; sourceTree = "<group>"; };
+		22E2C3D22A441A3400114B43 /* Post.Details.Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.Details.Test.swift; sourceTree = "<group>"; };
+		22E2C3D42A441E2C00114B43 /* Post.Create.Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.Create.Test.swift; sourceTree = "<group>"; };
 		5E8635D8A6E3038278C2D905 /* Pods-WellBlog.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WellBlog.release.xcconfig"; path = "Target Support Files/Pods-WellBlog/Pods-WellBlog.release.xcconfig"; sourceTree = "<group>"; };
 		8F473A0515ED83214FB2ABE4 /* Pods-WellBlogUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WellBlogUITests.debug.xcconfig"; path = "Target Support Files/Pods-WellBlogUITests/Pods-WellBlogUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		C7EAB097DA8CB337BEFE25CE /* Pods_WellBlogTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WellBlogTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -150,14 +145,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2238053F2A437E3D00EDA662 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				5ECD3ADA247DF6A303434188 /* Pods_WellBlogUITests.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -176,7 +163,6 @@
 			children = (
 				223805242A437E3C00EDA662 /* WellBlog */,
 				2238053B2A437E3D00EDA662 /* WellBlogTests */,
-				223805452A437E3D00EDA662 /* WellBlogUITests */,
 				223805232A437E3C00EDA662 /* Products */,
 				D5668F2840A422BED504B64A /* Pods */,
 				180873474A6FB315DF0872B5 /* Frameworks */,
@@ -188,7 +174,6 @@
 			children = (
 				223805222A437E3C00EDA662 /* WellBlog.app */,
 				223805382A437E3D00EDA662 /* WellBlogTests.xctest */,
-				223805422A437E3D00EDA662 /* WellBlogUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -209,18 +194,9 @@
 		2238053B2A437E3D00EDA662 /* WellBlogTests */ = {
 			isa = PBXGroup;
 			children = (
-				2238053C2A437E3D00EDA662 /* WellBlogTests.swift */,
+				22E2C3CA2A44104D00114B43 /* Post */,
 			);
 			path = WellBlogTests;
-			sourceTree = "<group>";
-		};
-		223805452A437E3D00EDA662 /* WellBlogUITests */ = {
-			isa = PBXGroup;
-			children = (
-				223805462A437E3D00EDA662 /* WellBlogUITests.swift */,
-				223805482A437E3D00EDA662 /* WellBlogUITestsLaunchTests.swift */,
-			);
-			path = WellBlogUITests;
 			sourceTree = "<group>";
 		};
 		22DBF0472A4385E100C0108C /* API */ = {
@@ -402,6 +378,26 @@
 			path = Create;
 			sourceTree = "<group>";
 		};
+		22E2C3CA2A44104D00114B43 /* Post */ = {
+			isa = PBXGroup;
+			children = (
+				22E2C3CF2A44110A00114B43 /* ViewModel */,
+				22E2C3CB2A44106E00114B43 /* Post.MockCoordinator.swift */,
+				22E2C3CD2A4410AF00114B43 /* Post.MockWorker.swift */,
+			);
+			path = Post;
+			sourceTree = "<group>";
+		};
+		22E2C3CF2A44110A00114B43 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				22E2C3D42A441E2C00114B43 /* Post.Create.Test.swift */,
+				22E2C3D22A441A3400114B43 /* Post.Details.Test.swift */,
+				2238053C2A437E3D00EDA662 /* Post.List.Test.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		D5668F2840A422BED504B64A /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -456,25 +452,6 @@
 			productReference = 223805382A437E3D00EDA662 /* WellBlogTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		223805412A437E3D00EDA662 /* WellBlogUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 223805522A437E3D00EDA662 /* Build configuration list for PBXNativeTarget "WellBlogUITests" */;
-			buildPhases = (
-				C2E7E35EC4EAE168EBBCB0FC /* [CP] Check Pods Manifest.lock */,
-				2238053E2A437E3D00EDA662 /* Sources */,
-				2238053F2A437E3D00EDA662 /* Frameworks */,
-				223805402A437E3D00EDA662 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				223805442A437E3D00EDA662 /* PBXTargetDependency */,
-			);
-			name = WellBlogUITests;
-			productName = WellBlogUITests;
-			productReference = 223805422A437E3D00EDA662 /* WellBlogUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -489,10 +466,6 @@
 						CreatedOnToolsVersion = 14.3.1;
 					};
 					223805372A437E3D00EDA662 = {
-						CreatedOnToolsVersion = 14.3.1;
-						TestTargetID = 223805212A437E3C00EDA662;
-					};
-					223805412A437E3D00EDA662 = {
 						CreatedOnToolsVersion = 14.3.1;
 						TestTargetID = 223805212A437E3C00EDA662;
 					};
@@ -514,7 +487,6 @@
 			targets = (
 				223805212A437E3C00EDA662 /* WellBlog */,
 				223805372A437E3D00EDA662 /* WellBlogTests */,
-				223805412A437E3D00EDA662 /* WellBlogUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -532,13 +504,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		223805362A437E3D00EDA662 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		223805402A437E3D00EDA662 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -581,28 +546,6 @@
 			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-WellBlogTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		C2E7E35EC4EAE168EBBCB0FC /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-WellBlogUITests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -681,16 +624,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2238053D2A437E3D00EDA662 /* WellBlogTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		2238053E2A437E3D00EDA662 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				223805492A437E3D00EDA662 /* WellBlogUITestsLaunchTests.swift in Sources */,
-				223805472A437E3D00EDA662 /* WellBlogUITests.swift in Sources */,
+				22E2C3CC2A44106E00114B43 /* Post.MockCoordinator.swift in Sources */,
+				2238053D2A437E3D00EDA662 /* Post.List.Test.swift in Sources */,
+				22E2C3D32A441A3400114B43 /* Post.Details.Test.swift in Sources */,
+				22E2C3CE2A4410AF00114B43 /* Post.MockWorker.swift in Sources */,
+				22E2C3D52A441E2C00114B43 /* Post.Create.Test.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -701,11 +639,6 @@
 			isa = PBXTargetDependency;
 			target = 223805212A437E3C00EDA662 /* WellBlog */;
 			targetProxy = 223805392A437E3D00EDA662 /* PBXContainerItemProxy */;
-		};
-		223805442A437E3D00EDA662 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 223805212A437E3C00EDA662 /* WellBlog */;
-			targetProxy = 223805432A437E3D00EDA662 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -866,11 +799,13 @@
 				DEVELOPMENT_TEAM = 9BC293Z6NF;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "WellBlog/Support Files/Info.plist";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = "";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIStatusBarStyle = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -879,9 +814,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.wnhirsch.WellBlog;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -896,11 +834,13 @@
 				DEVELOPMENT_TEAM = 9BC293Z6NF;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "WellBlog/Support Files/Info.plist";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = "";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIStatusBarStyle = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -909,9 +849,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.wnhirsch.WellBlog;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -925,13 +868,16 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 9BC293Z6NF;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.wnhirsch.WellBlogTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WellBlog.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/WellBlog";
 			};
 			name = Debug;
@@ -946,52 +892,17 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 9BC293Z6NF;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.wnhirsch.WellBlogTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WellBlog.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/WellBlog";
-			};
-			name = Release;
-		};
-		223805532A437E3D00EDA662 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8F473A0515ED83214FB2ABE4 /* Pods-WellBlogUITests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 9BC293Z6NF;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.wnhirsch.WellBlogUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = WellBlog;
-			};
-			name = Debug;
-		};
-		223805542A437E3D00EDA662 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = C8BB307AE506FA366C8E849C /* Pods-WellBlogUITests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 9BC293Z6NF;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.wnhirsch.WellBlogUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = WellBlog;
 			};
 			name = Release;
 		};
@@ -1021,15 +932,6 @@
 			buildConfigurations = (
 				223805502A437E3D00EDA662 /* Debug */,
 				223805512A437E3D00EDA662 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		223805522A437E3D00EDA662 /* Build configuration list for PBXNativeTarget "WellBlogUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				223805532A437E3D00EDA662 /* Debug */,
-				223805542A437E3D00EDA662 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
