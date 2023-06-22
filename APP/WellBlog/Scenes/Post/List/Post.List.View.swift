@@ -21,8 +21,8 @@ extension Scene.Post.List {
         
         private let newPostButton: UIButton = {
             let button = UIButton()
-            button.setTitle("create.post.button".localized(context: .postList), for: .normal)
-            button.backgroundColor = .secondaryLabel
+            button.setTitle("list.button".localized(context: .post), for: .normal)
+            button.backgroundColor = .systemBlue
             button.setTitleColor(.label, for: .normal)
             button.layer.cornerRadius = 10
             return button
@@ -62,10 +62,10 @@ extension Scene.Post.List {
         func setupAdditionalConfiguration() {
             backgroundColor = .systemBackground
             tableView.backgroundColor = .clear
-            newPostButton.addTarget(self, action: #selector(buttonAction), for: .touchUpInside)
+            newPostButton.addTarget(self, action: #selector(newPostButtonAction), for: .touchUpInside)
         }
         
-        @objc private func buttonAction() {
+        @objc private func newPostButtonAction() {
             newPostPublisher.send()
         }
     }

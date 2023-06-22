@@ -24,8 +24,8 @@ extension Scene.Post.List {
         }
         
         func goToPostDetail(index: Int) {
-//            let postId = posts[index].id
-            // TODO: Redirect to Post Details
+            guard let postId = posts[index].id else { return }
+            coordinator.startDetails(postId: postId)
         }
         
         func goToCreatePost() {
@@ -47,8 +47,14 @@ extension Scene.Post.List {
                 self.coordinator.showError { [weak self] _ in
                     guard let self = self else { return }
                     self.fetchPosts()
-                }
+                } cancel: { _ in }
             })
+        }
+        
+        func refreshData() {
+            self.page = 1
+            self.posts.removeAll()
+            fetchPosts()
         }
     }
 }

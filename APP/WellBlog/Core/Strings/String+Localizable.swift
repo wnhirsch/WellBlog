@@ -9,7 +9,7 @@ import Foundation
 
 enum LocalizableFiles: String {
     case `default` = "Default"
-    case postList = "Post.List"
+    case post = "Post"
 }
 
 extension String {

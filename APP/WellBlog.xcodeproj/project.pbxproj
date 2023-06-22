@@ -39,10 +39,13 @@
 		22DBF0872A4399A000C0108C /* Scene.Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22DBF0862A4399A000C0108C /* Scene.Post.swift */; };
 		22DBF0892A4399DE00C0108C /* Coordinator.Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22DBF0882A4399DE00C0108C /* Coordinator.Post.swift */; };
 		22DBF08B2A439A3D00C0108C /* Post.List.ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22DBF08A2A439A3D00C0108C /* Post.List.ViewController.swift */; };
-		22DBF08F2A439AD200C0108C /* Post.List.strings in Resources */ = {isa = PBXBuildFile; fileRef = 22DBF0912A439AD200C0108C /* Post.List.strings */; };
+		22DBF08F2A439AD200C0108C /* Post.strings in Resources */ = {isa = PBXBuildFile; fileRef = 22DBF0912A439AD200C0108C /* Post.strings */; };
 		22DBF0942A439B0300C0108C /* Post.List.View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22DBF0932A439B0300C0108C /* Post.List.View.swift */; };
 		22DBF0962A439B0900C0108C /* Post.List.ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22DBF0952A439B0900C0108C /* Post.List.ViewModel.swift */; };
 		22DBF0992A439B9E00C0108C /* Post.List.View.Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22DBF0982A439B9E00C0108C /* Post.List.View.Cell.swift */; };
+		22DBF09C2A43C23B00C0108C /* Post.Details.ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22DBF09B2A43C23B00C0108C /* Post.Details.ViewController.swift */; };
+		22DBF09E2A43C24100C0108C /* Post.Details.View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22DBF09D2A43C24100C0108C /* Post.Details.View.swift */; };
+		22DBF0A02A43C24800C0108C /* Post.Details.ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22DBF09F2A43C24800C0108C /* Post.Details.ViewModel.swift */; };
 		5ECD3ADA247DF6A303434188 /* Pods_WellBlogUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFDBA100E8677C8BCAAA35D2 /* Pods_WellBlogUITests.framework */; };
 		71437B6F512CF0F070CBE16D /* Pods_WellBlogTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7EAB097DA8CB337BEFE25CE /* Pods_WellBlogTests.framework */; };
 /* End PBXBuildFile section */
@@ -102,11 +105,14 @@
 		22DBF0862A4399A000C0108C /* Scene.Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scene.Post.swift; sourceTree = "<group>"; };
 		22DBF0882A4399DE00C0108C /* Coordinator.Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.Post.swift; sourceTree = "<group>"; };
 		22DBF08A2A439A3D00C0108C /* Post.List.ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.List.ViewController.swift; sourceTree = "<group>"; };
-		22DBF0902A439AD200C0108C /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Post.List.strings"; sourceTree = "<group>"; };
-		22DBF0922A439AD600C0108C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Post.List.strings; sourceTree = "<group>"; };
+		22DBF0902A439AD200C0108C /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Post.strings"; sourceTree = "<group>"; };
+		22DBF0922A439AD600C0108C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Post.strings; sourceTree = "<group>"; };
 		22DBF0932A439B0300C0108C /* Post.List.View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.List.View.swift; sourceTree = "<group>"; };
 		22DBF0952A439B0900C0108C /* Post.List.ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.List.ViewModel.swift; sourceTree = "<group>"; };
 		22DBF0982A439B9E00C0108C /* Post.List.View.Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.List.View.Cell.swift; sourceTree = "<group>"; };
+		22DBF09B2A43C23B00C0108C /* Post.Details.ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.Details.ViewController.swift; sourceTree = "<group>"; };
+		22DBF09D2A43C24100C0108C /* Post.Details.View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.Details.View.swift; sourceTree = "<group>"; };
+		22DBF09F2A43C24800C0108C /* Post.Details.ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.Details.ViewModel.swift; sourceTree = "<group>"; };
 		5E8635D8A6E3038278C2D905 /* Pods-WellBlog.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WellBlog.release.xcconfig"; path = "Target Support Files/Pods-WellBlog/Pods-WellBlog.release.xcconfig"; sourceTree = "<group>"; };
 		8F473A0515ED83214FB2ABE4 /* Pods-WellBlogUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WellBlogUITests.debug.xcconfig"; path = "Target Support Files/Pods-WellBlogUITests/Pods-WellBlogUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		C7EAB097DA8CB337BEFE25CE /* Pods_WellBlogTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WellBlogTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -295,6 +301,7 @@
 		22DBF0642A43904C00C0108C /* Post */ = {
 			isa = PBXGroup;
 			children = (
+				22DBF09A2A43C22200C0108C /* Details */,
 				22DBF08C2A439A4000C0108C /* List */,
 				22DBF0652A43905300C0108C /* Model */,
 				22DBF0882A4399DE00C0108C /* Coordinator.Post.swift */,
@@ -317,7 +324,7 @@
 			isa = PBXGroup;
 			children = (
 				22DBF0772A4398BD00C0108C /* Default.strings */,
-				22DBF0912A439AD200C0108C /* Post.List.strings */,
+				22DBF0912A439AD200C0108C /* Post.strings */,
 				22DBF0792A4398E600C0108C /* String+Localizable.swift */,
 			);
 			path = Strings;
@@ -360,6 +367,16 @@
 				22DBF0982A439B9E00C0108C /* Post.List.View.Cell.swift */,
 			);
 			path = Components;
+			sourceTree = "<group>";
+		};
+		22DBF09A2A43C22200C0108C /* Details */ = {
+			isa = PBXGroup;
+			children = (
+				22DBF09D2A43C24100C0108C /* Post.Details.View.swift */,
+				22DBF09B2A43C23B00C0108C /* Post.Details.ViewController.swift */,
+				22DBF09F2A43C24800C0108C /* Post.Details.ViewModel.swift */,
+			);
+			path = Details;
 			sourceTree = "<group>";
 		};
 		D5668F2840A422BED504B64A /* Pods */ = {
@@ -485,7 +502,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				22DBF0752A4398BD00C0108C /* Default.strings in Resources */,
-				22DBF08F2A439AD200C0108C /* Post.List.strings in Resources */,
+				22DBF08F2A439AD200C0108C /* Post.strings in Resources */,
 				223805322A437E3D00EDA662 /* LaunchScreen.storyboard in Resources */,
 				2238052F2A437E3D00EDA662 /* Assets.xcassets in Resources */,
 			);
@@ -619,11 +636,14 @@
 				22DBF0942A439B0300C0108C /* Post.List.View.swift in Sources */,
 				22DBF05B2A438DF600C0108C /* APITarget.swift in Sources */,
 				22DBF0532A438C9F00C0108C /* Repository.Post.swift in Sources */,
+				22DBF09E2A43C24100C0108C /* Post.Details.View.swift in Sources */,
 				22DBF0892A4399DE00C0108C /* Coordinator.Post.swift in Sources */,
 				22DBF0572A438D3000C0108C /* APIHost.swift in Sources */,
 				22DBF0852A43996300C0108C /* Scene.swift in Sources */,
 				22DBF0872A4399A000C0108C /* Scene.Post.swift in Sources */,
 				22DBF0602A43900700C0108C /* Worker.swift in Sources */,
+				22DBF0A02A43C24800C0108C /* Post.Details.ViewModel.swift in Sources */,
+				22DBF09C2A43C23B00C0108C /* Post.Details.ViewController.swift in Sources */,
 				22DBF0962A439B0900C0108C /* Post.List.ViewModel.swift in Sources */,
 				22DBF04F2A4386D100C0108C /* Coordinator.App.swift in Sources */,
 			);
@@ -679,13 +699,13 @@
 			name = Default.strings;
 			sourceTree = "<group>";
 		};
-		22DBF0912A439AD200C0108C /* Post.List.strings */ = {
+		22DBF0912A439AD200C0108C /* Post.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
 				22DBF0902A439AD200C0108C /* pt-BR */,
 				22DBF0922A439AD600C0108C /* en */,
 			);
-			name = Post.List.strings;
+			name = Post.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

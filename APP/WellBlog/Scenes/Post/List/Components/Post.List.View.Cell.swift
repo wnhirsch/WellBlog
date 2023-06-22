@@ -62,13 +62,11 @@ extension Scene.Post.List {
         func setup(model: Model.Post) {
             titleLabel.text = model.title
             if let date = model.createdAt {
-                dateLabel.text = "post.date".localized(
-                    context: .postList,
+                dateLabel.text = "list.cell.date".localized(
+                    context: .post,
                     date.formatted(date: .numeric, time: .omitted)
                 )
             }
         }
-        
     }
-    
 }
