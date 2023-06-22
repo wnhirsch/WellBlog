@@ -1,0 +1,21 @@
+// MARK: - Post.Create
+
+"create.title" = "Novo Post";
+"create.field.title" = "Insira um título";
+"create.field.description" = "Adicione o texto do post";
+"create.button" = "Adicionar Post";
+
+// MARK: - Post.Details
+
+"details.title" = "Detalhes do Post";
+"details.button" = "Excluir Post";
+"details.post.title" = "Título";
+"details.post.date" = "Data";
+"details.post.description" = "Descrição";
+
+// MARK: - Post.List
+
+"list.title" = "Lista de Posts";
+"list.cell.date" = "Data: %@";
+"list.button" = "Novo Post";
+"list.empty" = "Nenhum Post encontrado.";
