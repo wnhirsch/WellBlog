@@ -84,7 +84,17 @@ extension Scene.Post.Create {
         
         func setupAdditionalConfiguration() {
             backgroundColor = .systemBackground
+            addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(didTapView)))
             createPostButton.addTarget(self, action: #selector(didTapCreatePostButton), for: .touchUpInside)
+        }
+        
+        @objc private func didTapView() {
+            if titleField.isFirstResponder {
+                titleField.resignFirstResponder()
+            }
+            if descriptionField.isFirstResponder {
+                descriptionField.resignFirstResponder()
+            }
         }
         
         @objc private func didTapCreatePostButton() {

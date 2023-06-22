@@ -66,7 +66,7 @@ extension Scene.Post.Create {
             // If some parameter changes, the button state is recalculated
             viewModel.$title.merge(with: viewModel.$description)
                 .receive(on: DispatchQueue.main)
-                .sink { [weak self] value in
+                .sink { [weak self] _ in
                     guard let self = self else { return }
                     self.contentView.createPostButton.enable(
                         viewModel.isTitleValid() && viewModel.isDescriptionValid()

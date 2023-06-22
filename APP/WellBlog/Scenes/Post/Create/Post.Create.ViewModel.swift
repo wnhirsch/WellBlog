@@ -43,11 +43,11 @@ extension Scene.Post.Create {
         }
         
         func isTitleValid() -> Bool {
-            return !title.isEmpty
+            return !title.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty
         }
         
         func isDescriptionValid() -> Bool {
-            return !description.isEmpty
+            return !description.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty
         }
     }
 }
