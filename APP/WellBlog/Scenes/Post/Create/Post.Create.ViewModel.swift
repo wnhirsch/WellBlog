@@ -1,5 +1,5 @@
 //
-//  Post.List.ViewModel.swift
+//  Post.Create.ViewModel.swift
 //  WellBlog
 //
 //  Created by Wellington Nascente Hirsch on 21/06/23.
@@ -7,15 +7,15 @@
 
 import Combine
 
-extension Scene.Post.List {
+extension Scene.Post.Create {
     
     class ViewModel {
         
         private let coordinator: Coordinator.Post
         private let worker: Worker.Post
         
-        private var page: Int = 1
-        @Published var posts: [Model.Post] = []
+        @Published var title: String = ""
+        @Published var description: String = ""
         @Published var isLoading: Bool = false
 
         init(coordinator: Coordinator.Post, worker: Worker.Post = .init()) {
@@ -23,38 +23,31 @@ extension Scene.Post.List {
             self.worker = worker
         }
         
-        func goToPostDetail(index: Int) {
-            guard let postId = posts[index].id else { return }
-            coordinator.startDetails(postId: postId)
-        }
-        
-        func goToCreatePost() {
-            coordinator.startCreate()
-        }
-        
-        func fetchPosts() {
-            guard page > 0 else { return }
+        func createPost() {
+            guard isTitleValid() && isDescriptionValid() else { return }
             isLoading.toggle()
             
-            worker.getPostsByPage(page: page, success: { [weak self] posts in
+            let newPost = Model.NewPost(title: title, description: description)
+            worker.createPost(post: newPost, success: { [weak self] in
                 guard let self = self else { return }
-                self.page = posts.isEmpty ? -1 : (self.page + 1)
-                self.posts.append(contentsOf: posts)
+                self.coordinator.dismiss()
                 self.isLoading.toggle()
             }, failure: { [weak self] in
                 guard let self = self else { return }
                 self.isLoading.toggle()
                 self.coordinator.showError { [weak self] _ in
                     guard let self = self else { return }
-                    self.fetchPosts()
+                    self.createPost()
                 } cancel: { _ in }
             })
         }
         
-        func refreshData() {
-            self.page = 1
-            self.posts.removeAll()
-            fetchPosts()
+        func isTitleValid() -> Bool {
+            return !title.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty
+        }
+        
+        func isDescriptionValid() -> Bool {
+            return !description.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty
         }
     }
 }

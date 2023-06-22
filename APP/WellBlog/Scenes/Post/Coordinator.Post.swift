@@ -30,6 +30,11 @@ extension Coordinator {
             navigationController.pushViewController(vc, animated: true)
         }
         
+        func startCreate() {
+            let vc = Scene.Post.Create.ViewController(viewModel: .init(coordinator: self))
+            navigationController.pushViewController(vc, animated: true)
+        }
+        
         func dismiss() {
             navigationController.popViewController(animated: true)
         }
@@ -44,23 +49,19 @@ extension Coordinator {
                 preferredStyle: .alert
             )
             
-            if let cancel = cancel {
-                let cancelAction = UIAlertAction(
-                    title: "error.cancel".localized(context: .default),
-                    style: .cancel,
-                    handler: cancel
-                )
-                alert.addAction(cancelAction)
-            }
+            let cancelAction = UIAlertAction(
+                title: "error.cancel".localized(context: .default),
+                style: .cancel,
+                handler: cancel
+            )
+            alert.addAction(cancelAction)
             
-            if let tryAgain = tryAgain {
-                let tryAgainAction = UIAlertAction(
-                    title: "error.tryAgain".localized(context: .default),
-                    style: .default,
-                    handler: tryAgain
-                )
-                alert.addAction(tryAgainAction)
-            }
+            let tryAgainAction = UIAlertAction(
+                title: "error.tryAgain".localized(context: .default),
+                style: .default,
+                handler: tryAgain
+            )
+            alert.addAction(tryAgainAction)
             
             navigationController.present(alert, animated: true)
         }

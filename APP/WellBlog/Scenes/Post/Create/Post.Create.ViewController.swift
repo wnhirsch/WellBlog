@@ -1,5 +1,5 @@
 //
-//  Post.Details.ViewController.swift
+//  Post.Create.ViewController.swift
 //  WellBlog
 //
 //  Created by Wellington Nascente Hirsch on 21/06/23.
@@ -8,7 +8,7 @@
 import Combine
 import UIKit
 
-extension Scene.Post.Details {
+extension Scene.Post.Create {
 
     class ViewController: UIViewController, Loadable {
 
@@ -37,7 +37,7 @@ extension Scene.Post.Details {
         
         override func viewDidLoad() {
             super.viewDidLoad()
-            navigationItem.title = "details.title".localized(context: .post)
+            navigationItem.title = "create.title".localized(context: .post)
             bind()
         }
         
@@ -47,27 +47,44 @@ extension Scene.Post.Details {
         }
         
         private func bind() {
+            contentView.titleField.delegate = self
+            contentView.descriptionField.delegate = self
+            
             // Loading event
             viewModel.$isLoading.sink { [weak self] isLoading in
                 guard let self = self else { return }
-                self.contentView.deletePostButton.enable(!isLoading)
+                self.contentView.createPostButton.enable(!isLoading)
                 isLoading ? self.showLoading() : self.hideLoading()
             }.store(in: &cancellables)
             
-            // Load Post Event
-            viewModel.$post.sink { [weak self] post in
+            // Create Post Button click Event
+            contentView.createPostPublisher.sink { [weak self] _ in
                 guard let self = self else { return }
-                self.contentView.setup(model: post)
+                self.viewModel.createPost()
             }.store(in: &cancellables)
             
-            // Delete Post Button click Event
-            contentView.deletePostPublisher.sink { [weak self] _ in
-                guard let self = self else { return }
-                self.viewModel.deletePost()
+            // If some parameter changes, the button state is recalculated
+            viewModel.$title.merge(with: viewModel.$description)
+                .receive(on: DispatchQueue.main)
+                .sink { [weak self] _ in
+                    guard let self = self else { return }
+                    self.contentView.createPostButton.enable(
+                        viewModel.isTitleValid() && viewModel.isDescriptionValid()
+                    )
             }.store(in: &cancellables)
-            
-            // First API call
-            viewModel.fetchPost()
         }
+    }
+}
+
+extension Scene.Post.Create.ViewController: UITextFieldDelegate, UITextViewDelegate {
+
+    // Title Update Event
+    func textFieldDidChangeSelection(_ textField: UITextField) {
+        viewModel.title = textField.text ?? ""
+    }
+    
+    // Description Update Event
+    func textViewDidChange(_ textView: UITextView) {
+        viewModel.description = textView.text
     }
 }

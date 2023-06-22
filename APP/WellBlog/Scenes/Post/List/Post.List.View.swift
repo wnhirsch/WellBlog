@@ -19,7 +19,7 @@ extension Scene.Post.List {
             return tableView
         }()
         
-        private let newPostButton: UIButton = {
+        let newPostButton: UIButton = {
             let button = UIButton()
             button.setTitle("list.button".localized(context: .post), for: .normal)
             button.backgroundColor = .systemBlue
@@ -28,7 +28,6 @@ extension Scene.Post.List {
             return button
         }()
         
-        private var cancellables = Set<AnyCancellable>()
         let newPostPublisher = PassthroughSubject<Void, Never>()
         
         init() {
@@ -62,10 +61,31 @@ extension Scene.Post.List {
         func setupAdditionalConfiguration() {
             backgroundColor = .systemBackground
             tableView.backgroundColor = .clear
-            newPostButton.addTarget(self, action: #selector(newPostButtonAction), for: .touchUpInside)
+            newPostButton.addTarget(self, action: #selector(didTapNewPostButton), for: .touchUpInside)
         }
         
-        @objc private func newPostButtonAction() {
+        func setupEmptyMessage(isEmpty: Bool) {
+            if isEmpty {
+                let messageLabel = UILabel(frame: CGRect(
+                    x: 0, y: 0,
+                    width: tableView.bounds.size.width,
+                    height: tableView.bounds.size.height
+                ))
+                messageLabel.text = "list.empty".localized(context: .post)
+                messageLabel.textAlignment = .center
+                messageLabel.font = .systemFont(ofSize: 16)
+                messageLabel.textColor = .secondaryLabel
+                messageLabel.sizeToFit()
+                
+                tableView.backgroundView = messageLabel
+                tableView.separatorStyle = .none
+            } else {
+                tableView.backgroundView = nil
+                tableView.separatorStyle = .singleLine
+            }
+        }
+
+        @objc private func didTapNewPostButton() {
             newPostPublisher.send()
         }
     }
