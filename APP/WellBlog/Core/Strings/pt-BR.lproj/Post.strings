@@ -3,6 +3,7 @@
 "list.title" = "Lista de Posts";
 "list.cell.date" = "Data: %@";
 "list.button" = "Novo Post";
+"list.empty" = "Nenhum Post encontrado.";
 
 // MARK: - Post.Details
 

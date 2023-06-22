@@ -129,7 +129,7 @@ extension Scene.Post.Details {
         
         func setupAdditionalConfiguration() {
             backgroundColor = .systemBackground
-            deletePostButton.addTarget(self, action: #selector(deletePostButtonAction), for: .touchUpInside)
+            deletePostButton.addTarget(self, action: #selector(didTapDeletePostButton), for: .touchUpInside)
         }
         
         func setup(model: Model.Post) {
@@ -140,7 +140,7 @@ extension Scene.Post.Details {
             descriptionPostLabel.text = model.description
         }
         
-        @objc private func deletePostButtonAction() {
+        @objc private func didTapDeletePostButton() {
             deletePostPublisher.send()
         }
     }

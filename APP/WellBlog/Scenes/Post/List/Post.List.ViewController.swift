@@ -34,7 +34,14 @@ extension Scene.Post.List {
         
         override func viewDidLoad() {
             super.viewDidLoad()
+            
             navigationItem.title = "list.title".localized(context: .post)
+            navigationItem.rightBarButtonItem = .init(
+                barButtonSystemItem: .refresh,
+                target: self,
+                action: #selector(didTapRefreshButton)
+            )
+            
             bind()
         }
         
@@ -75,13 +82,18 @@ extension Scene.Post.List {
             // First API call
             viewModel.fetchPosts()
         }
+        
+        @objc private func didTapRefreshButton() {
+            viewModel.refreshData()
+        }
     }
 }
 
 extension Scene.Post.List.ViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        viewModel.posts.count
+        contentView.setupEmptyMessage(isEmpty: viewModel.posts.isEmpty)
+        return viewModel.posts.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
