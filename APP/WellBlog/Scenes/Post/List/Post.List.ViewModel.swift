@@ -14,7 +14,7 @@ extension Scene.Post.List {
         private let coordinator: Coordinator.Post
         private let worker: Worker.Post
         
-        private var page: Int = 1
+        var page: Int = 1
         @Published var posts: [Model.Post] = []
         @Published var isLoading: Bool = false
 

@@ -17,9 +17,4 @@ target 'WellBlog' do
     # Pods for testing
   end
 
-  target 'WellBlogUITests' do
-    inherit! :search_paths
-    # Pods for testing
-  end
-
 end

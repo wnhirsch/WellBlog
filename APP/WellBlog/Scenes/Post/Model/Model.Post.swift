@@ -15,11 +15,11 @@ extension Model {
         let description: String?
         let createdAt: Date?
         
-        init() {
-            self.id = nil
-            self.title = nil
-            self.description = nil
-            self.createdAt = nil
+        init(id: Int? = nil, title: String? = nil, description: String? = nil, createdAt: Date? = nil) {
+            self.id = id
+            self.title = title
+            self.description = description
+            self.createdAt = createdAt
         }
     }
 }
