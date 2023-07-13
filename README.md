@@ -6,7 +6,7 @@ No arquivo [desafio.pdf](desafio.pdf) contem a descrição do desafio. A defini�
 
 ## Sobre o projeto
 
-A primeira tarefa definitivamente foi a criação dos Projects e do Board aqui no Github mesmo para organização de tarefas e necessidades de ambas as aplicações. Tais re podem ser encontrados aqui: [WellBlog API 1.0.0](https://github.com/users/wnhirsch/projects/4) e [WellBlog iOS 1.0.0](https://github.com/users/wnhirsch/projects/5).
+A primeira tarefa definitivamente foi a criação dos Projects e do Board aqui no Github mesmo para organização de tarefas e necessidades de ambas as aplicações. Tais projetos podem ser encontrados aqui: [WellBlog API 1.0.0](https://github.com/users/wnhirsch/projects/4) e [WellBlog iOS 1.0.0](https://github.com/users/wnhirsch/projects/5).
 
 O GitFlow do projeto funciona da seguinte forma:
 - `main` é branch principal que contém o mesmo código que está em produção.
@@ -40,7 +40,7 @@ $ dotnet watch
 
 ### Uso
 
-Você pode executar a API localmente executando o comando `dotnet run` na pasta root do projeto, porém a forma de uso ideal é acessando o URL https://wellblog.bsite.net que hospeda tanto a API quanto o Banco de dados e também é a mesma URL que a aplicação iOS está utilizando como padrão para as requisições.
+Você pode executar a API localmente executando o comando `dotnet run` na pasta root do projeto, porém a forma de uso ideal é acessando o URL https://wellblog.bsite.net (Não disponível desde 13/07/2023) que hospeda tanto a API quanto o Banco de dados e também é a mesma URL que a aplicação iOS está utilizando como padrão para as requisições.
 
 ### Implementação
 
