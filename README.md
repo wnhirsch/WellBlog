@@ -40,7 +40,7 @@ $ dotnet watch
 
 ### Uso
 
-Você pode executar a API localmente executando o comando `dotnet run` na pasta root do projeto, porém a forma de uso ideal é acessando o URL https://wellblog.bsite.net (Não disponível desde 13/07/2023) que hospeda tanto a API quanto o Banco de dados e também é a mesma URL que a aplicação iOS está utilizando como padrão para as requisições.
+Você pode executar a API localmente executando o comando `dotnet run` na pasta root do projeto, porém a forma de uso ideal é acessando o URL https://wellblog.bsite.net que hospeda tanto a API quanto o Banco de dados e também é a mesma URL que a aplicação iOS está utilizando como padrão para as requisições.
 
 ### Implementação
 
